@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+        function isEven(i){
+            return i % 2 === 0
+        }
+
+      let evensum_100 = 0;
+      for (let i = 0; i < 101; i++) {
+        if (isEven(i) === true) {
+          evensum_100 = evensum_100 + i;
+        }
+      }
+      let evensum_99 = evensum_100 - 100;
+      console.log(`The sum exclusive 100 is: ${evensum_99}`);
+      console.log(`The sum inclusive 100 is: ${evensum_100}`);
+    </script>
+    <!--
+    One can include as many stylesheets as one needs,
+    but bear in mind that the order matters! 
+    
+    If an element is styled in multiple stylesheets
+    the properties are accumulated. If there are double
+    styles defined, the last one will be applied!
+    
+    <link rel="stylesheet" href="css/tables.css" />
+    <link rel="stylesheet" href="css/fonts.css"
+    -->
+  </head>
+  <body></body>
+</html>
+
+<!-- In de e-learning stond dat deze moest worden gepused
+ als "Variables (#2)", maar in GitHub en de titel van  
+de e-learning is "3. Variabelen #3" -->
