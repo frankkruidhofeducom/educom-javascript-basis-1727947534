@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      const name = "Bootleg Bob";
+
+      /// Length of the string:
+      const length = name.length;
+
+      /// Case manipulation
+      const lowerCase = name.toLowerCase();
+      const upperCase = name.toUpperCase();
+
+      /// Replace (only 1)
+      const replaced = name.replace("o", "a");
+      /// ALL with regular expression
+      const replaceAll = name.replace(/o/g, "a");
+
+      /// Substring
+      const substring = name.substring(2, 8);
+
+      /// Array
+      const toArray = name.split(" ");
+
+      console.log({
+        length: length,
+        lowerCase: lowerCase,
+        upperCase: upperCase,
+        replaced: replaced,
+        replaceAll: replaceAll,
+        toArray: toArray,
+        substring: substring,
+      });
+    </script>
+    <!--
+    One can include as many stylesheets as one needs,
+    but bear in mind that the order matters! 
+    
+    If an element is styled in multiple stylesheets
+    the properties are accumulated. If there are double
+    styles defined, the last one will be applied!
+    
+    <link rel="stylesheet" href="css/tables.css" />
+    <link rel="stylesheet" href="css/fonts.css"
+    -->
+  </head>
+  <body></body>
+</html>
+
+<!-- In de e-learning stond dat deze moest worden gepused
+ als "Variables (#2)", maar in GitHub en de titel van  
+de e-learning is "3. Variabelen #3" -->
