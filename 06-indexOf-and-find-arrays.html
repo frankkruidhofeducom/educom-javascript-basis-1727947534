@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      const fruits = ["Apple", "Orange", "Apple", "Mango"]
+      const numbers = [4, 9, 16, 25, 29]
+
+      /// Helper function
+      const findOver18 = (item) => {
+        return item > 18
+      }
+
+      /// indexOf
+      const a = fruits.indexOf("Apple")
+      const b = fruits.lastIndexOf("Apple")
+
+      // find
+      const c = numbers.find(findOver18)
+      const d = numbers.findIndex(findOver18)
+
+      console.log({a: a, b: b, c: c, d: d})
+
+      console.log(`Fruistlist: ${fruits}`)
+      console.log(`Index of apple: ${a}`)
+      console.log(`Last index of apple: ${b}`)
+
+      console.log(`Numbers: ${numbers}`)
+      console.log(`First element over 18: ${c}`)
+      console.log(`The index of the element: ${d}`)
+    </script>
+    <!--
+    One can include as many stylesheets as one needs,
+    but bear in mind that the order matters! 
+    
+    If an element is styled in multiple stylesheets
+    the properties are accumulated. If there are double
+    styles defined, the last one will be applied!
+    
+    <link rel="stylesheet" href="css/tables.css" />
+    <link rel="stylesheet" href="css/fonts.css"
+    -->
+  </head>
+  <body></body>
+</html>
+
+<!-- In de e-learning stond dat deze moest worden gepused
+ als "Variables (#2)", maar in GitHub en de titel van  
+de e-learning is "3. Variabelen #3" -->
