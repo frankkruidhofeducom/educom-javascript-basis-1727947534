@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+    One can include as many stylesheets as one needs,
+    but bear in mind that the order matters! 
+    
+    If an element is styled in multiple stylesheets
+    the properties are accumulated. If there are double
+    styles defined, the last one will be applied!
+    
+    <link rel="stylesheet" href="css/tables.css" />
+    <link rel="stylesheet" href="css/fonts.css"
+    -->
+  </head>
+  <body>
+    <script>
+      /// Variables
+      let name = "Bob";
+      let payment = true;
+
+      /// No initialization
+      let count;
+      count = 1;
+
+      /// Arrays
+      let beatles = ["John", "Paul", "Ringo", "George"];
+
+      /// Objects
+      let singer = {
+        firstName: "Mick",
+        lastName: "Jagger",
+        band: "The Rolling Stones",
+      };
+
+      /// Array of obects
+      let books = [
+        { id: 1, author: "Stephen King", title: "It" },
+        { id: 2, author: "F. Scott Fitzgerald", title: "The Great Gatsby" },
+      ];
+
+      /// Constants
+      const x = 10;
+      const y = 100;
+      const addUser = () => {
+        /// a function can be a constant too!!
+      };
+
+      /// Assignment
+      let z = x + y;
+
+      /// Console
+      console.log(z);
+      console.log({ SINGER: singer });
+      console.log(beatles, books);
+
+      /// Extra code
+      let a = 15 + "hello";
+      let b = 15 + 10 + "hello";
+
+      /// ! Dynamic types ! DON'T DO THIS!!!
+      let c = 1; // valid
+      c = "Hello"; // c holds 'Hello' now and is also valid
+      c = false; // now c is a boolean
+    </script>
+  </body>
+</html>
